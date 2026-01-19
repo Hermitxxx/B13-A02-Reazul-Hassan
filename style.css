@@ -339,9 +339,74 @@ img {
 
 .feature {
     background-color: var(--primary-color);
+    padding: 7.5rem 0;
 }
 
+.feature-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.feature-cards {
+    background-color: var(--fifth-color);
+    width: 23.75rem;
+    height: 27.5rem;
+    border-radius: 1.5rem;
+    /* border: 1px solid red; */
+}
+
+.feature-description {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.feature-description h3 {
+    color: var(--secondary-color);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.75rem;
+}
+
+.feature-description p {
+    color: var(--secondary-color);
+    font-size: var(--fs-primary);
+    line-height: 1.5rem;
+    opacity: 60%;
+}
+
+.duration {
+    color: var(--third-color);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-primary);
+    opacity: 100%;
+}
+
+.clock {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* host section */
+
+.host {
+    background-color: var(--primary-color);
+}
+
+.host-container {
+    background-color: var(--fourth-color);
+    width: 75%;
+    max-width: 1200px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
 
 
 
