@@ -20,6 +20,10 @@
     --fw-medium: 500;
 }
 
+.hidden {
+    display: none !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +74,10 @@
     color: var(--secondary-color);
     background: linear-gradient(30deg, #F7E93F 20%, #FB09B4 51%, #9100F8 100%);
     cursor: pointer;
+}
+
+.btn-group {
+    margin: 0 auto;
 }
 
 .btn-subscribe {
@@ -243,6 +251,7 @@ img {
 
 .section-heading {
     text-align: center;
+    /* border: 1px solid red; */
 }
 
 .about-section-title {
@@ -258,6 +267,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
+    border-top: 1px solid hsla(0, 0%, 35%, 0.63);
     padding: 5rem 7.5rem;
 }
 
@@ -431,7 +441,7 @@ img {
     width: 25rem;
 }
 
-.host-info h3{
+.host-info h3 {
     color: var(--secondary-color);
     font-size: 2rem;
     font-weight: var(--fw-bold);
@@ -537,41 +547,113 @@ footer {
     }
 
     .nav-links,
-    .btn {
+    .nav-btn {
         display: none;
     }
 
-    .hamburger {
+    .ham-burger {
         display: block;
+        color: var(--secondary-color);
     }
 
     .hero-container {
         padding: 2.5rem 1.25rem;
         margin: 0 auto;
-        width: 100%;
-        max-width: 36rem;
+        max-width: 576px;
         text-align: center;
     }
 
-    .mic-container {
+    .hero-title {
+        margin-top: 4rem;
+    }
+
+    .btn-group {
+        gap: 1.5rem;
+    }
+
+    .brand {
+        font-size: 2.5rem;
+        font-weight: var(--fw-extra-bold);
+    }
+
+    .mic-icon {
         width: 200px;
         height: 200px;
         margin: auto;
+        top: 2.8rem;
     }
 
-    .hero-circle {
+    .microphone {
+        width: 45px;
+        left: 38%;
+        top: 32%;
+    }
+
+    /* about section */
+
+    .about {
+        padding: 2rem;
+    }
+
+    .about-container {
         width: 100%;
     }
 
-    .hero-mic {
-        z-index: 1;
-        max-width: 45px;
-        margin: 0 auto;
+    .about-section-title {
+        font-size: 2rem;
+        font-weight: var(--fw-bold);
     }
 
-    .hero-content h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-top: 1.5rem;
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 4rem 1.25rem 2.5rem;
+        gap: 2.5rem;
+        border-top: 1px solid hsla(0, 0%, 35%, 0.63);
+    }
+
+    .section-subtitle {
+        line-height: 20px;
+    }
+
+    .why {
+        padding: 30px 0;
+    }
+
+    .why-cards {
+        padding: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .why-cards-container {
+        grid-template-areas:
+            "headphone"
+            "mobile"
+            "globe"
+            "zap"
+            "book";
+
+        width: 100%;
+        gap: 1rem;
+    }
+
+    #headphone {
+        padding-top: 0;
+    }
+
+    .feature {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .feature-card-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-title {
+        margin-bottom: 1rem;
     }
 }
