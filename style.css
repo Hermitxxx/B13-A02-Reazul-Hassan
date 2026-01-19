@@ -72,6 +72,22 @@
     cursor: pointer;
 }
 
+.btn-subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: var(--fs-primary);
+    font-weight: normal;
+    border: 1px solid var(--third-color);
+    color: var(--third-color);
+    padding: 12px 20px;
+}
+
+.message-btn-img {
+    width: 20px;
+}
+
 img {
     width: 100%;
 }
@@ -397,15 +413,113 @@ img {
 /* host section */
 
 .host {
+    padding-bottom: 7.5rem;
     background-color: var(--primary-color);
 }
 
 .host-container {
-    background-color: var(--fourth-color);
+    background-color: rgba(53, 17, 101, 0.4);
     width: 75%;
     max-width: 1200px;
-    border: 1px solid red;
     margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+}
+
+.host-img {
+    width: 25rem;
+}
+
+.host-info h3{
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+}
+
+.host-info p {
+    color: var(--secondary-color);
+    font-size: var(--fs-primary);
+    line-height: 1.5rem;
+    opacity: 60%;
+    margin-bottom: 1rem;
+}
+
+.host-socials {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-icons {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid var(--fourth-color);
+    border-radius: 50%;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+/* footer designs */
+
+footer {
+    background-image: url("./assets/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 7.5rem;
+}
+
+.footer-container {
+    width: 85%;
+    max-width: 1360px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon img {
+    max-width: 20px;
+}
+
+.footer-title {
+    font-size: var(--fs-big);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2rem;
+}
+
+.footer-icon-container {
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon a {
+    text-decoration: none;
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-medium);
+    line-height: auto;
+    color: var(--secondary-color);
+    opacity: 60%;
+}
+
+.footer-container p {
+    color: var(--secondary-color);
+    font-size: var(--fs-primary);
+    line-height: 1.5rem;
+    color: var(--secondary-color);
+    opacity: 60%;
 }
 
 
