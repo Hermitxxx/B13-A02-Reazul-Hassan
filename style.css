@@ -1,1 +1,398 @@
-@import "tailwindcss";
+/* root vairables */
+
+:root {
+    --primary-color: #1A0B2E;
+    --secondary-color: #FFFFFF;
+    --third-color: #00FF88;
+    --fourth-color: #533C72;
+    --fifth-color: #250D44;
+    --sixth-color: #230E3D;
+
+    --fs-big: 3.75rem;
+    --fs-semi-medium: 2.25rem;
+    --fs-medium: 3rem;
+    --fs-small: 1.5rem;
+    --fs-primary: 1rem;
+
+    --fw-extra-bold: 800;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-medium: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* custom designs */
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* shared design */
+
+.display-flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wave {
+    background: linear-gradient(15deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.btn {
+    gap: 6px;
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-semi-bold);
+    border: none;
+    padding: 0.8125rem 1rem;
+    border-radius: 10000px;
+    color: var(--secondary-color);
+    background: linear-gradient(30deg, #F7E93F 20%, #FB09B4 51%, #9100F8 100%);
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.section-title {
+    color: var(--secondary-color);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-bold);
+    /* border: 1px solid red; */
+    width: 75%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto 2.5rem;
+}
+
+.section-subtitle {
+    color: var(--secondary-color);
+    font-size: var(--fs-primary);
+    opacity: 80%;
+    line-height: 40px;
+    margin-bottom: 5rem;
+}
+
+
+
+/* main design */
+
+.header {
+    background-color: var(--primary-color);
+    padding: 1.875rem 0;
+}
+
+.ham-burger {
+    display: none;
+}
+
+.navbar {
+    width: 75%;
+    max-width: 1200px;
+    gap: 19rem;
+}
+
+.brand {
+    font-size: var(--fs-semi-medium);
+    font-weight: var(--fw-bold);
+}
+
+.tech {
+    color: var(--secondary-color);
+}
+
+.nav-links {
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: var(--fw-medium);
+}
+
+/* hero section */
+
+.hero-container {
+    background-image: url("./assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* min-height: 90vh; */
+    padding: 6.25rem 32rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.mic-icon {
+    width: 22rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    /* top: 0.4rem; */
+    /* border: 1px solid red; */
+}
+
+.badge-new {
+    color: var(--primary-color);
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-semi-bold);
+    background-color: var(--third-color);
+    padding: 0.5rem 1rem;
+    border-radius: 1000px;
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+    z-index: 1;
+    position: absolute;
+    left: 75%;
+    top: 5%;
+}
+
+.microphone {
+    max-width: 7.1875rem;
+    position: absolute;
+    left: 34%;
+    top: 27%;
+    z-index: 1;
+}
+
+.hero-description {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.hero-title {
+    font-size: var(--fs-big);
+    color: var(--secondary-color);
+    font-weight: var(--fw-bold);
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.hero-subtitle {
+    color: var(--secondary-color);
+    font-size: var(--fs-primary);
+    margin-bottom: 1.5rem;
+    opacity: 80%;
+}
+
+.btn-group {
+    gap: 0.5rem;
+}
+
+/* about section */
+
+.about {
+    background-color: var(--primary-color);
+    padding: 3.125rem 12.5rem 7.5rem;
+}
+
+.about-container {
+    width: 75%;
+    max-width: 1200px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.about-section-title {
+    margin-bottom: 1rem;
+}
+
+
+.cards-container {
+    width: 100%;
+    max-width: 1600px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    padding: 5rem 7.5rem;
+}
+
+.cards {
+    text-align: center;
+}
+
+.cards h2 {
+    color: var(--third-color);
+    font-size: var(--fs-medium);
+    margin-bottom: 1rem;
+}
+
+.cards p {
+    color: var(--secondary-color);
+    font-size: var(--fs-primary);
+    line-height: 1.25rem;
+    opacity: 80%;
+}
+
+/* why choose section */
+
+.why {
+    background-color: var(--sixth-color);
+    padding: 7.5rem 0;
+}
+
+.why-cards img {
+    max-width: 3.125rem;
+    margin-top: 3.5rem;
+}
+
+.why-cards-container {
+    width: 75%;
+    max-width: 1200px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "headphone  mobile  mobile"
+        "headphone  globe  globe"
+        "zap        zap    book";
+
+    gap: 1.875rem;
+}
+
+#headphone {
+    padding-top: 5rem;
+    grid-area: headphone;
+}
+
+#mobile {
+    grid-area: mobile;
+    padding-bottom: 3rem;
+}
+
+#globe {
+    padding-bottom: 3rem;
+    grid-area: globe;
+}
+
+#zap {
+    padding-bottom: 3rem;
+    grid-area: zap;
+}
+
+#book {
+    padding-bottom: 3rem;
+    grid-area: book;
+}
+
+.why-cards {
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 0 2.5rem;
+    border-radius: 2.5rem;
+    text-align: left;
+}
+
+.why-cards h3 {
+    color: var(--secondary-color);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-bold);
+    margin: 1rem 0;
+}
+
+.why-cards p {
+    color: var(--secondary-color);
+    opacity: 50%;
+    line-height: 1.5rem;
+    font-size: var(--fs-primary);
+    margin: 1rem 0;
+}
+
+/* feature designs */
+
+.feature {
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    .navbar {
+        width: 100%;
+        max-width: 36rem;
+        margin: 0 auto;
+        padding: 1.25rem;
+        justify-content: center;
+        gap: 20rem;
+        /* border: 1px solid red; */
+    }
+
+    .nav-links,
+    .btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-container {
+        padding: 2.5rem 1.25rem;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 36rem;
+        text-align: center;
+    }
+
+    .mic-container {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+
+    .hero-circle {
+        width: 100%;
+    }
+
+    .hero-mic {
+        z-index: 1;
+        max-width: 45px;
+        margin: 0 auto;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 1.5rem;
+    }
+}
