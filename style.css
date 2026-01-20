@@ -540,7 +540,7 @@ footer {
         width: 100%;
         max-width: 36rem;
         margin: 0 auto;
-        padding: 1.25rem;
+        padding: 0 1.25rem;
         justify-content: space-between;
         gap: 0;
         /* border: 1px solid red; */
