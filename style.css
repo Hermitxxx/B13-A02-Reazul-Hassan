@@ -744,3 +744,16 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 255, 200, 0.4);
 }
+
+.social-icons:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(247, 233, 63, 0.4),
+                0 8px 30px rgba(247, 9, 180, 0.3),
+                0 8px 40px rgba(145, 0, 248, 0.2);
+    cursor: pointer;
+}
+
+a:hover {
+    color: #00FF88;
+    transition: color .4s;
+}
